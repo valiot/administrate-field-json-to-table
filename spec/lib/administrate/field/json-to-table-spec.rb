@@ -1,4 +1,4 @@
-require 'administrate/field/json_to_table'
+require 'administrate/field/json-to-table'
 
 describe Administrate::Field::JSONToTable do
   describe '#to_partial_path' do
@@ -8,7 +8,7 @@ describe Administrate::Field::JSONToTable do
 
       path = field.to_partial_path
 
-      expect(path).to eq("/fields/json_to_table/#{page}")
+      expect(path).to eq("/fields/json-to-table/#{page}")
     end
   end
 end
