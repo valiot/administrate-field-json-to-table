@@ -1,6 +1,6 @@
-# Administrate::Field::Enum
+# Administrate::Field::JSONToTable
 
-A plugin to show enum attributes in [Administrate].
+A plugin to show JSON to table attributes in [Administrate].
 
 This repository is the first field plugin extracted out of Administrate.
 Although its structure may change,
