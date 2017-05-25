@@ -17,21 +17,28 @@ By default, the attribute is rendered as a text tag.
 <table>
   <thead>
     <tr>
-    <% field.each do |k,v| %>
-        <td><%= k %></td>
+    <% field.data.each do |k,v| %>
+        <th><%= k %></th>
     <% end %>
-    </tr>
+  </tr>
   </thead>
 <tbody>
-  # k = key    v = value
-<% field.each do |k,v| %>
+<% if field.data.first[1].kind_of?(Array) %>
     <tr>
-      <% if v.kind_of?(Array) %>
+<% field.data.each do |k,v| %>
       <td><%= v[0]%></td>
-      <td><%=  v[1]%></td>
-      <% else %>
+<% end %>
+    </tr>
+    <tr>
+<% field.data.each do |k,v| %>
+      <td><%= v[1]%></td>
+<% end %>
+    </tr>
+<% else %>
+    <tr>
+<% field.data.each do |k,v| %>
       <td><%= v %></td>
-      <% end %>
+<% end %>
     </tr>
 <% end %>
 </tbody>

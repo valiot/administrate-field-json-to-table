@@ -3,7 +3,7 @@ require 'rails'
 
 module Administrate
   module Field
-    class JsonToTable < Administrate::Field::Base
+    class Jsontable < Administrate::Field::Base
       class Engine < ::Rails::Engine
       end
     end

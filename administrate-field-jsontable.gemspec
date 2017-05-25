@@ -1,11 +1,11 @@
 $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = 'administrate-field-json-to-table'
+  s.name = 'administrate-field-jsontable'
   s.version = '0.0.1'
   s.authors = ['Enrique Barragan', 'Esteban Arocha']
   s.email = ['enrique@disruptiveangels.com','esteban@disruptiveangels.com']
-  s.homepage = 'https://github.com/DisruptiveAngels/administrate-field-json-to-table'
+  s.homepage = 'https://github.com/DisruptiveAngels/administrate-field-jsontable'
   s.summary = 'JSON to table field plugin for Administrate'
   s.description = s.summary
   s.license = 'MIT'

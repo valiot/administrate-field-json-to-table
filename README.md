@@ -1,4 +1,4 @@
-# Administrate::Field::JSONToTable
+# Administrate::Field::Jsontable
 
 A plugin to show JSON to table attributes in [Administrate].
 
