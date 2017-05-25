@@ -1,7 +1,7 @@
 <%#
-# JSON to table Show Partial
+# Enum Show Partial
 
-This partial renders an JSON to table attribute,
+This partial renders an enum attribute,
 to be displayed on a resource's show page.
 
 By default, the attribute is rendered as a text tag.
@@ -9,8 +9,8 @@ By default, the attribute is rendered as a text tag.
 ## Local variables:
 
 - `field`:
-  An instance of [Administrate::Field::Jsontable][1].
-  A wrapper around the JSON to table attributes pulled from the model.
+  An instance of [Administrate::Field::Enum][1].
+  A wrapper around the enum attributes pulled from the model.
 
 %>
 
@@ -18,7 +18,7 @@ By default, the attribute is rendered as a text tag.
   <thead>
     <tr>
     <% field.data.each do |k,v| %>
-        <th><%= k %></th>
+        <th><%= t(k) %></th>
     <% end %>
   </tr>
   </thead>
