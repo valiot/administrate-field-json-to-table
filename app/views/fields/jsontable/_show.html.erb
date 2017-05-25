@@ -26,18 +26,18 @@ By default, the attribute is rendered as a text tag.
 <% if field.data.first[1].kind_of?(Array) %>
     <tr>
 <% field.data.each do |k,v| %>
-      <td><%= v[0]%></td>
+      <td><%= if v[0].blank? then "-" else v[0] end %></td>
 <% end %>
     </tr>
     <tr>
 <% field.data.each do |k,v| %>
-      <td><%= v[1]%></td>
+      <td><%= if v[1].blank? then "-" else v[1] end %></td>
 <% end %>
     </tr>
 <% else %>
     <tr>
 <% field.data.each do |k,v| %>
-      <td><%= v %></td>
+      <td><%= if v.blank? then "-" else v end %></td>
 <% end %>
     </tr>
 <% end %>
