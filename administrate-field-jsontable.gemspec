@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'administrate-field-jsontable'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.authors = ['Enrique Barragan', 'Esteban Arocha']
   s.email = ['enrique@disruptiveangels.com','esteban@disruptiveangels.com']
   s.homepage = 'https://github.com/DisruptiveAngels/administrate-field-jsontable'
