@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'administrate-field-jsontable'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.authors = ['Enrique Barragan', 'Esteban Arocha']
   s.email = ['enrique@disruptiveangels.com','esteban@disruptiveangels.com']
   s.homepage = 'https://github.com/DisruptiveAngels/administrate-field-jsontable'
@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency 'administrate'
-  s.add_dependency 'rails', '>= 4.2', '< 5.1'
+  s.add_dependency 'rails', '>= 4.2', '< 5.2'
 end
