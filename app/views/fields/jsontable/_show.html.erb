@@ -14,32 +14,5 @@ By default, the attribute is rendered as a text tag.
 
 %>
 
-<table>
-  <thead>
-    <tr>
-    <% field.data.each do |k,v| %>
-        <th><%= t(k) %></th>
-    <% end %>
-  </tr>
-  </thead>
-<tbody>
-<% if field.data.first[1].kind_of?(Array) %>
-    <tr>
-<% field.data.each do |k,v| %>
-      <td><%= if v[0].blank? then "-" else v[0] end %></td>
-<% end %>
-    </tr>
-    <tr>
-<% field.data.each do |k,v| %>
-      <td><%= if v[1].blank? then "-" else v[1] end %></td>
-<% end %>
-    </tr>
-<% else %>
-    <tr>
-<% field.data.each do |k,v| %>
-      <td><%= if v.blank? then "-" else v end %></td>
-<% end %>
-    </tr>
-<% end %>
-</tbody>
-</table>
+
+<%= render partial: '/fields/jsontable/json_table_field',  locals: { data: field.data } %>
