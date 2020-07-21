@@ -1,2 +1,7 @@
 *.gem
-*.cache
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/spec/example_app/log/*
+/tmp/*
+/spec/example_app/tmp/*
