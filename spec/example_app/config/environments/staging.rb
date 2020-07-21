@@ -1,1 +1,3 @@
-require_relative "production"
+# frozen_string_literal: true
+
+require_relative 'production'

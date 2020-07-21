@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'administrate/field/jsontable'
 
 describe Administrate::Field::Jsontable do

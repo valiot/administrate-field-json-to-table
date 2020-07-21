@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The test environment is used exclusively to run your application's
 # test suite. You never need to work with it otherwise. Remember that
 # your test database is "scratch space" for the test suite and is wiped
@@ -15,11 +17,11 @@ Rails.application.configure do
   if config.respond_to?(:public_file_server)
     config.public_file_server.enabled = true
     config.public_file_server.headers = {
-      "Cache-Control" => "public, max-age=3600",
+      'Cache-Control' => 'public, max-age=3600'
     }
   else
     config.serve_static_files = true
-    config.static_cache_control = "public, max-age=3600"
+    config.static_cache_control = 'public, max-age=3600'
   end
 
   # Show full error reports and disable caching.

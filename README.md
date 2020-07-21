@@ -17,4 +17,5 @@ Add to your gemfile `gem 'administrate-field-jsontable'`
 
 Run `bundle exec rake db:setup` to set up example rails app on development environment
 Run `bundle exec rspec` to run tests
+Run `bundle exec rubocop` to linting tests
 

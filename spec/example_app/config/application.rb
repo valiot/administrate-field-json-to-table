@@ -1,11 +1,13 @@
-require File.expand_path("boot", __dir__)
+# frozen_string_literal: true
 
-require "active_model/railtie"
-require "active_record/railtie"
-require "active_job/railtie"
-require "action_controller/railtie"
-require "action_view/railtie"
-require "sprockets/railtie"
+require File.expand_path('boot', __dir__)
+
+require 'active_model/railtie'
+require 'active_record/railtie'
+require 'active_job/railtie'
+require 'action_controller/railtie'
+require 'action_view/railtie'
+require 'sprockets/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -32,8 +34,6 @@ module AdministrateJsontablePrototype
       config.active_record.raise_in_transactional_callbacks = true
     end
 
-    if Rails::VERSION::MAJOR >= 5
-      config.active_record.time_zone_aware_types = %i(datetime time)
-    end
+    config.active_record.time_zone_aware_types = %i[datetime time] if Rails::VERSION::MAJOR >= 5
   end
 end
