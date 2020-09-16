@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |s|
   s.name = 'administrate-field-jsontable'
-  s.version = '0.0.5'
+  s.version = '0.1.0'
   s.authors = ['Adrian Rangel', 'Enrique Barragan']
   s.email = ['adrian@valiot.io', 'enrique@valiot.io']
   s.homepage = 'https://github.com/Valiot/administrate-field-jsontable'
